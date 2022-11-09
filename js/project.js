@@ -2,7 +2,7 @@ let pokemons = [];
 
 async function getPokemons() {
     const response = await fetch(
-        "https://pokeapi.co/api/v2/pokemon?limit=151"
+        "https://pokeapi.co/api/v2/pokemon?limit=251"
     );
     if (response.ok) {
         let pokemons = await response.json();
